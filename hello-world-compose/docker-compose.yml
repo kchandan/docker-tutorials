@@ -3,6 +3,8 @@ services:
     build:
       context: ./backend
     container_name: python-backend
+    environment:
+     - SNOWFLAKE_CONNECTION="MY CONNECTION"
     ports:
       - "8000:8000"
 
